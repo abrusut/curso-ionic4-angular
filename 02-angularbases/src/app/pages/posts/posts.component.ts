@@ -8,16 +8,24 @@ import { DataService } from '../../services/data.service';
 })
 export class PostsComponent implements OnInit {
 
+  posts: any;
 
   constructor( private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getPosts()
+    console.log('INIT');
+    this.posts = this.dataService.getPosts();
+    /**this.dataService.getPosts()
       .subscribe(
-          (posts: any) => {
+          (posts: any[]) => {
             console.log(posts);
+            this.posts = posts;
           }
-      );
+      ); */
+  }
+
+  escucharClick( id: number ) {
+    console.log('click en post id ' + id);
   }
 
 }
