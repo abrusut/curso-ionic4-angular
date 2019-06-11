@@ -1,0 +1,26 @@
+<ion-header no-border >
+  <ion-toolbar>
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- "detail" genera la flecha ">" -->
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let c of componentes" detail
+        [routerLink]="c.redirectTo">
+    
+    <ion-icon slot="start" [name]="c.icon"></ion-icon>
+    <ion-label>{{c.name}}</ion-label>
+  </ion-item>   
+</ion-list>
+
+
+
+
+<ion-button  routerLinkActive="router-link-active"  > Alert</ion-button>
+<ion-button  routerLinkActive="router-link-active" >Action Sheet</ion-button>
+
+
+
+</ion-content>
