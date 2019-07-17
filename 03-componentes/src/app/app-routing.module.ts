@@ -15,8 +15,12 @@ const routes: Routes = [
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
   { path: 'infinit-scroll', loadChildren: './pages/infinit-scroll/infinit-scroll.module#InfinitScrollPageModule' },
   { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
-  { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },  { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
+  { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },
+  { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
   { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' },
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },   { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' },
+  { path: 'progress-bar', loadChildren: './pages/progress-bar/progress-bar.module#ProgressBarPageModule' },
+ 
 
 ];
 

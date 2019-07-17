@@ -68,6 +68,21 @@
       "icon": "refresh-circle",
       "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "icon": "phone-portrait",
+      "name": "Modal",
+      "redirectTo": "/modal"
+    },
+    {
+      "icon": "tablet-portrait",
+      "name": "Popover",
+      "redirectTo": "/popover"
+    },
+    {
+      "icon": "code-working",
+      "name": "ProgressBar y Range",
+      "redirectTo": "/progress-bar"
     }
   ]
   

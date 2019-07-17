@@ -12,7 +12,7 @@
                      menu="primerMenu"  >
                     </ion-menu-button>
 
-    <ion-title text-primary>Componentes</ion-title>
+    <ion-title color="primary">Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -23,7 +23,8 @@
         [routerLink]="c.redirectTo">
     
     <ion-icon slot="start" 
-            [name]="c.icon"></ion-icon>
+            [name]="c.icon"
+            color="primary"></ion-icon>
     <ion-label>{{c.name}}</ion-label>
   </ion-item>   
 </ion-list>

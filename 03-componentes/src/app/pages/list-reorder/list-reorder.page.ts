@@ -16,9 +16,9 @@ export class ListReorderPage implements OnInit {
 
   doReorder(event) {
     console.log(event);
-    const itemMover = this.personajes.slice( event.detail.from, 1 )[0];
+    // const itemMover = this.personajes.slice( event.detail.from, 1 )[0];
 
-    this.personajes.splice( event.detail.to, 0, itemMover);
+    // this.personajes.splice( event.detail.to, 0, itemMover);
 
     event.detail.complete();
   }
