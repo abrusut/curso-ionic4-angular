@@ -83,6 +83,21 @@
       "icon": "code-working",
       "name": "ProgressBar y Range",
       "redirectTo": "/progress-bar"
+    },
+    {
+      "icon": "arrow-round-down",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
+    },
+    {
+      "icon": "search",
+      "name": "Search",
+      "redirectTo": "/search-bar"
+    },  
+    {
+      "icon": "copy",
+      "name": "Segment",
+      "redirectTo": "/segment"
     }
   ]
   
