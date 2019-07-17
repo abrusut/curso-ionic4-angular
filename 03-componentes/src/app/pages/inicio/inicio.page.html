@@ -1,16 +1,29 @@
 <ion-header no-border >
   <ion-toolbar>
-    <ion-title>Componentes</ion-title>
+
+    <!-- Link hamburguesa MENU
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    -->
+    <ion-menu-button color="primary"
+                     menu="primerMenu"  >
+                    </ion-menu-button>
+
+    <ion-title text-primary>Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <!-- "detail" genera la flecha ">" -->
 <ion-content>
 <ion-list>
-  <ion-item *ngFor="let c of componentes" detail
+  <ion-item *ngFor="let c of componentes | async" detail
         [routerLink]="c.redirectTo">
     
-    <ion-icon slot="start" [name]="c.icon"></ion-icon>
+    <ion-icon slot="start" 
+            [name]="c.icon"></ion-icon>
     <ion-label>{{c.name}}</ion-label>
   </ion-item>   
 </ion-list>
